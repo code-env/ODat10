@@ -8,8 +8,6 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <h1 className="text-black">React Application ready</h1>
-        <p className="bg-blue-950 text-blue-400">Welcome to our page</p>
         <Routes>
           <Route path="/component" element={<Component />} />
         </Routes>
