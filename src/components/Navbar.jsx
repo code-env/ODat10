@@ -10,7 +10,7 @@ function Navbar() {
             <Link to="/" className='font-bold text-lg '>
                 <img src={logo} alt="Logo" />
             </Link>
-            <Link to="/component" className='text-blue-500' >Component</Link>
+            <Link to="/component" className='text-blue-500 bg-red-700' >Component</Link>
         </div>
         </div>
     </nav>

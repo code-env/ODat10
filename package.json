@@ -1,5 +1,5 @@
 {
-  "name": "od-webpage",
+  "name": "odat10",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,6 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-paginate": "^8.2.0",
     "react-router-dom": "^6.24.1"
   },
   "devDependencies": {
