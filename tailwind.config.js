@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      lineHeight:{
+        '38px':'38px',
+      },
+      screens:{
+        'xs':'400px',
+      },
       colors: {
         'custom-active': '#34D399',
       },
