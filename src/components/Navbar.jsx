@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/image1.svg";
 
 function Navbar() {
   
@@ -8,11 +8,26 @@ function Navbar() {
 
   const MobileView = () => {
     setIsMobile(!isMobile)
-    console.log(isMobile);
+  }
+
+  let {pathname} = useLocation()
+  let subpage = pathname.split('/')?.[1]
+  console.log(subpage);
+
+  const Linkness = (type = null) => {
+    let classes = 'rounded-full p-2'
+
+    if (type === subpage){
+      classes += 'bg-orange-500 rounded-full'
+    } else {
+      classes += 'bg-blue-400'
+      // console.log(classes);
+    }
+    return classes;
   }
 
   return (
-    <nav className="fixed w-full top-0 right-0 left-0 z-50 shadow-md">
+    <nav className="fixed w-full top-0 right-0 left-0 z-50 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 sm:py-5 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div>
@@ -20,18 +35,18 @@ function Navbar() {
               <img src={logo} alt="Logo" className="w-20 h-auto" />
             </Link>
           </div>
-          <div className="hidden flex-col content-start md:flex">
+          <div className="hidden flex-col items-start md:flex">
             <div className="space-x-20 mb-3 ">
               <Link
                 to="/home"
-                className="active:rounded-full p-2 active:bg-custom-active"
+                className="rounded-full p-2 active:bg-custom-active"
               >
                 Home
               </Link>
-              <Link to="/about" className="">
+              <Link to="/about" className={Linkness('/about')}>
                 About
               </Link>
-              <Link to="/contact" className="">
+              <Link to="/contact" className={Linkness('/contact')}>
                 Contact
               </Link>
             </div>
@@ -85,30 +100,31 @@ function Navbar() {
           </div>
         </div>
       </div>
+      
       {isMobile && (
         <div className="flex flex-col md:hidden mt-5 items-center transition-transform duration-500">
         <div className="space-x-20 mb-3">
           <Link
             to="/home"
-            className="active:rounded-full p-2 active:bg-custom-active"
+            className="hover:bg-orange-200 active:bg-orange-500 rounded-full p-2"
           >
             Home
           </Link>
-          <Link to="/about" className="text-base font-medium">
+          <Link to="/about" className="text-base font-medium hover:bg-orange-200 active:bg-orange-500 rounded-full p-2">
             About
           </Link>
-          <Link to="/contact" className="hover:bg-orange-200 peer-active:bg-orange-500 rounded-full p-2">
+          <Link to="/contact" className="hover:bg-orange-200 active:bg-orange-500 rounded-full p-2">
             Contact
           </Link>
         </div>
         <div className="space-x-20 ">
-          <Link to="/schedule" className="">
+          <Link to="/schedule" className="hover:bg-orange-200 active:font-medium rounded-full p-2">
             Schedule
           </Link>
-          <Link to="/partners" className="">
+          <Link to="/partners" className="hover:bg-orange-200 active:bg-orange-500 rounded-full p-2">
             Partners
           </Link>
-          <Link to="/speakers" className="">
+          <Link to="/speakers" className="hover:bg-orange-200 active:bg-orange-500 rounded-full p-2">
             Speakers
           </Link>
         </div>
