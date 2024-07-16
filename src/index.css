@@ -6,10 +6,19 @@
 @layer base {
 
     html {
-        font-family: "Poppins", "sans-serif";
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     body{
-        background-color: lightgray 50% cover no-repeat;
+        background-color: lightgray 50%;
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
         /* overflow-x: hidden; */
     }
 }
+
+@layer components {
+
+    
+    }
