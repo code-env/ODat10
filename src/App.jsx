@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Component from "./components/Home";
 
 function App() {
   return (
@@ -15,6 +14,7 @@ function App() {
           <Route path="/component" element={<Component />} />
           <Route path="/component" element={<Component />} />
           <Route path="/component" element={<Component />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </>
