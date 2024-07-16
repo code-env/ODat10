@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom-active': '#34D399',
+      },
+    },
+  },
+  variants: {
+    extend: {
+      backgroungColor: ['active'],
+    },
   },
   plugins: [],
 }
