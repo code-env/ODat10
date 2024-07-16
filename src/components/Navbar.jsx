@@ -97,7 +97,7 @@ function Navbar() {
           <Link to="/about" className="text-base font-medium">
             About
           </Link>
-          <Link to="/contact" className="">
+          <Link to="/contact" className="hover:bg-orange-200 peer-active:bg-orange-500 rounded-full p-2">
             Contact
           </Link>
         </div>
