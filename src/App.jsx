@@ -1,9 +1,13 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Component from "./components/Home";
+
+import Home from "./components/Home";
 import About from "./components/About";
+import Contact from "./components/Contact"
+import Schedule from "./components/Schedule";
 import Partners from "./components/Partners";
+import Speakers from "./components/Speakers"
 
 function App() {
   return (
@@ -11,13 +15,13 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/home" element={<Component/>} />
-          <Route path="/component" element={<Component />} />
-          <Route path="/component" element={<Component />} />
-          <Route path="/component" element={<Component />} />
-          <Route path="/component" element={<Component />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/schedule" element={<Schedule />} />
           <Route path="/partners" element={<Partners />} />
-          <Route path="/about" element={<About/>} />
+          <Route path="/speakers" element={<Speakers />} />
+
         </Routes>
       </Router>
     </>

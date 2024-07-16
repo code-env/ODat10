@@ -11,6 +11,7 @@ function Partners() {
         <div></div>
         <div></div>
       </div>
+
     </div>
   );
 }
