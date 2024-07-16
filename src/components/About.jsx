@@ -2,13 +2,13 @@ import React from "react";
 
 function About() {
   return (
-    <div>
+    <div className="flex mt-20">
     
       <div className=" flex flex-col m-3 p-3 w-1/2">
-        <span>
-          About <h1>OD & OD@10</h1>
+        <span className="flex text-xl text-gray-900 gap-2">
+          About <h1 className=""> OD & OD@10</h1>
         </span>
-        <p className="">
+        <p className="text-gray-700">
           Open Dreams is a distinguished organization dedicated to providing
           equal access to educational opportunities for underserved communities.
           They achieve this by establishing educational centers, offering
@@ -24,9 +24,7 @@ function About() {
           mentors, volunteers, donors, educational stakeholders, and supporters
           in a grand showcase of success and inspiration
         </p>
-
         <h2>Event Overview</h2>
-
         <p>
           The Open Dreams 10th Anniversary will span three days of immersive
           experiences, thought-provoking discussions, engaging workshops, and
@@ -37,8 +35,8 @@ function About() {
         </p>
       </div>
       <div>
-        <div className="bg-gray-200">
-            
+        <div className="bg-gray-200 ">
+            hello world
         </div>
       </div>
     </div>
