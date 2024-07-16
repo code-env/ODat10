@@ -3,10 +3,10 @@ import React from "react";
 function About() {
   return (
     <div className="flex mt-20">
-    
-      <div className=" flex flex-col m-3 p-3 w-1/2">
+      <div className="flex flex-col m-3 p-3 w-1/2">
         <span className="flex text-xl text-gray-900 gap-2">
-          About <h1 className=""> OD & OD@10</h1>
+          About
+          <h1 className=""> OD & OD@10</h1>
         </span>
         <p className="text-gray-700">
           Open Dreams is a distinguished organization dedicated to providing
@@ -34,10 +34,8 @@ function About() {
           specifically at the IRIC Campus and Djeuga Palace Hotel.
         </p>
       </div>
-      <div>
-        <div className="bg-gray-200 ">
-            hello world
-        </div>
+      <div className="flex flex-col m-3 p-3 w-1/2">
+        <div className=" ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam est natus, temporibus autem rem atque debitis iste quasi quis fugiat aspernatur repellat eligendi explicabo quidem excepturi vero, voluptatem magnam necessitatibus! Fugiat obcaecati earum non atque ad soluta cum aliquid, assumenda dolore odio corrupti laudantium ipsam voluptates natus ullam mollitia enim expedita perspiciatis fugit quis. Debitis minima iure dolores necessitatibus modi magnam pariatur. Explicabo distinctio vitae iusto tempore accusamus culpa nihil aut aperiam ut dicta, excepturi, minima dolorum facere dignissimos officiis libero, sed provident! Eligendi, aut voluptatem fugiat nihil similique eius exercitationem accusantium modi doloribus, delectus enim aperiam perferendis eos in natus. Vero officiis eligendi, accusamus, iure porro optio perferendis ad atque tempora repellat et molestias provident culpa aliquam ipsa adipisci voluptatum corporis, est nulla neque autem consectetur! A consequatur, animi sit, dicta facere voluptatem enim, quas voluptate suscipit nostrum doloribus maiores veritatis facilis optio sed cum provident? Placeat illum quis consequatur itaque accusamus modi vitae libero. Sapiente illum recusandae, ipsum eligendi illo doloribus repudiandae iure quos ad non aut quod suscipit vel qui quasi, enim molestiae eum nemo voluptatem! Obcaecati, porro eos ut provident tenetur officia et quia similique. Alias aspernatur qui pariatur non dolorum quod possimus libero, in nam?</div>
       </div>
     </div>
   );
