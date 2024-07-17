@@ -1,7 +1,7 @@
 import React from "react";
 
 function About() {
-  return 
+  return (
     <div className= " lg:flex mt-20 p-5 gap-16 " >
     
       <div className="flex-1 flex-col flex gap-16 text-lg text-gray-700  w-full leading-7 lg:w-1/2 font-sans">
@@ -42,6 +42,8 @@ function About() {
       {Array.from({length: 4}).map( (_,index) => (
         <div className="bg-gray-200 h-[207px]" key={index}></div>
       )) }
+      </div>
+
       </div>
   );
 }
