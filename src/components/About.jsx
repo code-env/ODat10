@@ -43,7 +43,6 @@ function About() {
         <div className="bg-gray-200 h-[207px]" key={index}></div>
       )) }
       </div>
-
       </div>
   );
 }

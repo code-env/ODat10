@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="flex flex-col md:flex-row mt-20 ">
       {/* First section */}
-      <div className="md:flex-grow-0 md:w-1/2 md:ml-10 m-5 p-5 flex flex-col justify-between">
+      <div className="md:flex-grow-0  md:w-1/2 md:ml-10 m-5 p-5 flex flex-col justify-between">
         <div className="text-center md:text-left">
           <h2 className="text-4xl md:text-7xl font-bold mb-4">OD@10</h2>
           <p className="text-xl md:text-5xl font-light text-gray-700">
@@ -28,7 +28,7 @@ function Home() {
       </div>
 
       {/* Vertical Line */}
-      <div className="hidden h-screen md:block border-l border-gray-200 my-5" />
+      <div className="hidden h-screen md:block my-5" />
 
       {/* Second section */}
       <div className="md:mt-10 flex-[2] flex flex-col justify-center items-center">
