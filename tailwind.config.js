@@ -12,6 +12,9 @@ export default {
       screens:{
         'xs':'400px',
       },
+      fontFamily:{
+        sans :['Monserrat','sans-serif'],
+      },
       colors: {
         'custom-active': '#34D399',
       },

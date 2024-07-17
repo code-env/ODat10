@@ -17,7 +17,10 @@ import {
 function Partners() {
   return (
     <div className="mt-20">
-      <div className="lg:flex flex-col m-3 p-3 ">
+      <div className="lg:flex flex-col m-3 p-3 font-sans">
+       <div className="m-3 p-3">
+        <h1 className="text-gray-900">Partners</h1>
+       </div>
         <div className="grid gap-4 p-6 lg:gap-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <img src={image2} className="w-40" alt="Partner 1" />
