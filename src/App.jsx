@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact"
@@ -20,6 +21,7 @@ function App() {
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/speakers" element={<Speakers />} />
+
         </Routes>
       </Router>
     </>
