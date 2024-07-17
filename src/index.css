@@ -6,12 +6,11 @@
 @layer base {
 
     html {
-        font-family: 'Poppins', 'sans-serif';
+     font-family: 'Montserrat',sans-serif;
     }
     body{
         background-color: lightgray 50%;
         min-height: 100vh;
-        /* color: rgb(145, 145, 145); */
         background-size: cover;
         background-repeat: no-repeat;
     }
