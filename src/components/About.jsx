@@ -4,7 +4,7 @@ function About() {
   return (
     <>
       <div className="lg:flex mt-20 p-5 gap-16">
-        <div className="flex-1 flex-col flex gap-16 text-lg text-gray-700  w-full  leading-38px lg:w-1/2">
+        <div className="flex-1 flex-col flex gap-16 text-lg text-gray-700  w-full leading-7 lg:w-1/2 font-sans">
           <div className="flex gap-6 flex-col">
             <h1 className="flex text-[32px] text-gray-900 gap-2 font-normal">
               About <span className="font-bold"> OD & OD@10</span>
