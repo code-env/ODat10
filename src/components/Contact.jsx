@@ -1,11 +1,9 @@
-import React from "react";
+import React from 'react'
 
 function Contact() {
   return (
-    <div className="flex mt-20">
-      <div>Contact here</div>
-    </div>
-  );
+    <div>Contact</div>
+  )
 }
 
-export default Contact;
+export default Contact

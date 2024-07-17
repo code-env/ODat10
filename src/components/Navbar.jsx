@@ -3,132 +3,152 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/image1.svg";
 
 function Navbar() {
-  
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(false);
+  const { pathname } = useLocation();
+  const subpage = pathname.split("/")[1]; // Adjusted to split by '/' directly
 
-  const MobileView = () => {
-    setIsMobile(!isMobile)
-  }
+  // Function to toggle mobile view
+  const toggleMobileView = () => {
+    setIsMobile(!isMobile);
+  };
 
-  let {pathname} = useLocation()
-  let subpage = pathname.split('/')?.[1]
-  console.log(subpage);
+  // Function to determine active link classes
+  const getLinkClasses = (type) => {
+    let classes = "rounded-full p-2";
 
-  const Linkness = (type = null) => {
-    let classes = 'rounded-full p-2'
-
-    if (type === subpage){
-      classes += 'bg-orange-500 rounded-full'
+    if (type === subpage) {
+      classes += " bg-orange-500 text-white"; // Active link styles
     } else {
-      classes += 'bg-blue-400'
-      // console.log(classes);
+      classes += " bg-white text-gray-700"; // Inactive link styles
     }
+
     return classes;
-  }
+  };
 
   return (
     <nav className="fixed w-full top-0 right-0 left-0 z-50 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 sm:py-5 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div>
-            <Link to="/home" className="">
+            <Link to="/home">
               <img src={logo} alt="Logo" className="w-20 h-auto" />
             </Link>
           </div>
-          <div className="hidden flex-col items-start md:flex">
-            <div className="space-x-20 mb-3 ">
+          <div className="hidden md:flex md:flex-col items-start">
+            <div className="space-x-20 mb-3">
               <Link
                 to="/home"
-                className="rounded-full p-2 active:bg-custom-active"
+                className={`rounded-full p-2 ${getLinkClasses("home")}`}
               >
                 Home
               </Link>
-              <Link to="/about" className={Linkness('/about')}>
+              <Link
+                to="/about"
+                className={`rounded-full p-2 ${getLinkClasses("about")}`}
+              >
                 About
               </Link>
-              <Link to="/contact" className={Linkness('/contact')}>
+              <Link
+                to="/contact"
+                className={`rounded-full p-2 ${getLinkClasses("contact")}`}
+              >
                 Contact
               </Link>
             </div>
-            <div className="space-x-20 ">
-              <Link to="/schedule" className="">
+            <div className="space-x-20">
+              <Link
+                to="/schedule"
+                className={`rounded-full p-2 ${getLinkClasses("schedule")}`}
+              >
                 Schedule
               </Link>
-              <Link to="/partners" className="">
+              <Link
+                to="/partners"
+                className={`rounded-full p-2 ${getLinkClasses("partners")}`}
+              >
                 Partners
               </Link>
-              <Link to="/speakers" className="">
+              <Link
+                to="/speakers"
+                className={`rounded-full p-2 ${getLinkClasses("speakers")}`}
+              >
                 Speakers
               </Link>
             </div>
           </div>
           <div className="" />
           <div className="md:hidden flex items-center">
-            <button onClick={MobileView} className="focus:outline-none">
+            <button
+              onClick={toggleMobileView}
+              className="focus:outline-none p-2"
+            >
               {isMobile ? (
                 <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  className="h-6 w-6"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
               ) : (
                 <svg
-                  className="h-6 w-6"
-                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
+                  fill="none"
+                  className="h-6 w-6"
                   stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
-              )
-            }
+              )}
             </button>
           </div>
         </div>
       </div>
-      
+
+      {/* Mobile menu */}
       {isMobile && (
-        <div className="flex flex-col md:hidden mt-5 items-center transition-transform duration-500">
-        <div className="space-x-20 mb-3">
-          <Link
-            to="/home"
-            className="hover:bg-orange-200 active:bg-orange-500 rounded-full p-2"
-          >
-            Home
-          </Link>
-          <Link to="/about" className="text-base font-medium hover:bg-orange-200 active:bg-orange-500 rounded-full p-2">
-            About
-          </Link>
-          <Link to="/contact" className="hover:bg-orange-200 active:bg-orange-500 rounded-full p-2">
-            Contact
-          </Link>
+        <div className="md:hidden flex flex-col mt-5 items-center">
+          <div className="space-x-20 mb-3">
+            <Link
+              to="/home"
+              className={`rounded-full p-2 ${getLinkClasses("home")}`}
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              className={`rounded-full p-2 ${getLinkClasses("about")}`}
+            >
+              About
+            </Link>
+            <Link
+              to="/contact"
+              className={`rounded-full p-2 ${getLinkClasses("contact")}`}
+            >
+              Contact
+            </Link>
+          </div>
+          <div className="space-x-20">
+            <Link to="/schedule" className="rounded-full p-2">
+              Schedule
+            </Link>
+            <Link to="/partners" className="rounded-full p-2">
+              Partners
+            </Link>
+            <Link to="/speakers" className="rounded-full p-2">
+              Speakers
+            </Link>
+          </div>
         </div>
-        <div className="space-x-20 ">
-          <Link to="/schedule" className="hover:bg-orange-200 active:font-medium rounded-full p-2">
-            Schedule
-          </Link>
-          <Link to="/partners" className="hover:bg-orange-200 active:bg-orange-500 rounded-full p-2">
-            Partners
-          </Link>
-          <Link to="/speakers" className="hover:bg-orange-200 active:bg-orange-500 rounded-full p-2">
-            Speakers
-          </Link>
-        </div>
-      </div>
       )}
     </nav>
   );

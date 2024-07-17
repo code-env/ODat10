@@ -2,8 +2,8 @@ import React from 'react'
 
 function Speakers() {
   return (
-    <div>Speakers</div>
+    <div className='mt-24 p-3'>Speakers</div>
   )
 }
 
-export default Speakers;
+export default Speakers
