@@ -1,12 +1,10 @@
 // src/Slider.js
 import React, { useState } from "react";
-import odpng from "../assets/Rectangle1.png";
-import odpng1 from "../assets/Rectangle2.png";
-import odpng2 from "../assets/Rectangle3.png";
-import odpng3 from "../assets/image1.svg";
-import odpng4 from "../assets/Images/image13.svg";
+import odpng from "../assets/Rectangle3.png";
+import odpng1 from "../assets/Rectangle1.png";
+import odpng2 from "../assets/Rectangle2.png";
 
-const images = [odpng, odpng1, odpng2, odpng3, odpng4];
+const images = [odpng, odpng1, odpng2];
 
 const Slider = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
