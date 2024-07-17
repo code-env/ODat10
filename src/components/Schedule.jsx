@@ -15,7 +15,7 @@ function Schedule() {
             <button
             key={index}
             onClick={() => setSelected(index)}
-            className={`md:px-12 p-1 rounded-lg cursor-pointer ${
+            className={`md:px-12 p-1 rounded-full cursor-pointer ${
               selected === index
               ? 'bg-blue-500 text-white'
               : 'bg-white text-black'
