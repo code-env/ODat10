@@ -18,6 +18,9 @@ export default {
       fontSize:{
         'custom-32':'32px',
       },
+      gridTemplateColumns:{
+        'auto-fit-minmax':'repeat(auto-fit,minmax(400px,1fr))',
+      },
       colors: {
         'custom-active': '#34D399',
       },
