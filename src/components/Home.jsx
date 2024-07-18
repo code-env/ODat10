@@ -14,6 +14,10 @@ function Home() {
             CELEBRATING A DECADE OF TRIUMPH
           </p>
         </div>
+        <div className="flex text-center md:text-left mt-auto md:items-start gap-2 flex-col">
+        <Link className="md:text-2xl text-sm text-blue-500 font-semibold">Register :</Link>
+          <p className="text-sm md:text-xl">Order for a hoody</p>
+        </div>
 
         {/* Content */}
         <div className="flex justify-center md:justify-start mt-auto">
@@ -31,7 +35,6 @@ function Home() {
       <div className="md:mt-10 flex flex-[2] flex-col justify-between items-center">
         <div className="">
           <Slider />
-          {/* <Contact /> */}
         </div>
         {/* Footer */}
         <footer className="w-full p-4  text-center flex flex-col md:flex-row items-center justify-end">
