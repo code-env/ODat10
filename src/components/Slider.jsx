@@ -2,6 +2,8 @@ import { useState } from "react";
 import odpng from "../assets/Rectangle3.png";
 import odpng1 from "../assets/Rectangle1.png";
 import odpng2 from "../assets/Rectangle2.png";
+import odpng3 from "../assets/OD-pic1.jpg";
+import odpng4 from "../assets/OD-pic2.jpg";
 import odpng5 from "../assets/OD-pic3.jpg";
 import odpng6 from "../assets/OD-pic4.jpg";
 import odpng7 from "../assets/OD-pic5.jpg";
@@ -12,8 +14,8 @@ const images = [
   odpng,
   odpng1,
   odpng2,
-  // odpng3,
-  // odpng4,
+  odpng3,
+  odpng4,
   odpng5,
   odpng6,
   odpng7,
@@ -39,7 +41,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto overflow-hidden">
+    <div className="relative w-full max-w-5xl mx-auto h-screen overflow-hidden">
       <div className="flex justify-center items-center overflow-x-auto hide-scrollbar space-x-2 py-4">
         <div className="flex items-center">
         {images.map((image, index) => (
@@ -49,7 +51,7 @@ const Slider = () => {
               index === currentIndex ? "scale-105 z-20" : "scale-90 z-10"
             }`}
             style={{
-              width: index === currentIndex ? "40%" : "30%",
+              width: index === currentIndex ? "50%" : "40%",
             }}
             onMouseEnter={() => handleHover(index)}
           >
@@ -62,10 +64,10 @@ const Slider = () => {
         ))}
         </div>
       </div>
-      {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex space-x-4"> */}
+      <div className="flex z-50 items-center hidden ">
         <button
           onClick={handlePrev}
-          className="absolute left-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full"
+          className="absolute left-0 transform z-10 -translate-y-1/2 px-4 py-2 rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +86,7 @@ const Slider = () => {
         </button>
         <button
           onClick={handleNext}
-          className="absolute right-0 transform -translate-y-1/2  px-4 py-2 rounded-full"
+          className="absolute right-0 transform -translate-y-1/2 z-10 px-4 py-2 rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +103,7 @@ const Slider = () => {
             />
           </svg>
         </button>
-      {/* </div> */}
+      </div>
     </div>
   );
 };
