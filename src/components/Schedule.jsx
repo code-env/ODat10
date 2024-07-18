@@ -22,7 +22,8 @@ function Schedule() {
             >
               {item}
             </button>
-          ))}
+          )
+          )}
         </div>
       </div>
     </div>
