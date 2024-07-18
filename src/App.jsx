@@ -21,7 +21,7 @@ function App() {
             <Route path="/partners" element={<Partners />} />
             <Route path="/speakers" element={<Speakers />} />
           </Routes>
-        </div>
+</div>
       </Router>
     </>
   );

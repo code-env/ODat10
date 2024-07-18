@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-
     html {
              font-family: 'Montserrat',sans-serif;
     }
@@ -15,8 +13,6 @@ ound-size: cover;
         background-repeat: no-repeat;
     }
 }
-.fle
-x-.flex-none {
   flex: none;
 }
 .transition-transform {
@@ -39,14 +35,4 @@ x-.flex-none {
 }
 .hide-scrollbar {
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-}
-.hide-scrollbar::-webkit-scrollbar { /* WebKit */
-  width: 0;
-  height: 0;
-}
-.space-x-4 > * + * {
-  margin-left: 1rem;
-}
-
 
