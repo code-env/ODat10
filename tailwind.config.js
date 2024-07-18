@@ -15,6 +15,9 @@ export default {
       fontFamily:{
         sans :['Monserrat','sans-serif'],
       },
+      fontSize:{
+        'custom-32':'32px',
+      },
       colors: {
         'custom-active': '#34D399',
       },

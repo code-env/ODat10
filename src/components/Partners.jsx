@@ -19,7 +19,7 @@ function Partners() {
     <div className="mt-20">
       <div className="lg:flex flex-col m-3 p-3 font-sans">
        <div className="m-3 p-3">
-        <h1 className="text-gray-900">Partners</h1>
+        <h1 className="text-gray-900 text-custom-32">Partners</h1>
        </div>
         <div className="grid gap-4 p-6 lg:gap-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -29,7 +29,7 @@ function Partners() {
             <img src={image6} className="w-40" alt="Partner 4" />
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mx-auto">
+          <div className="grid grid-cols-2  p-4  md:grid-cols-3 gap-10 mx-auto">
             <img src={image3} className="w-40" alt="Partner 5" />
             <img src={image8} className="w-40" alt="Partner 6" />
             <img src={image7} className="w-40" alt="Partner 7" />
