@@ -44,7 +44,7 @@ function Partners() {
             <img src={image6} className="w-40" alt="Partner 4" />
           </div>
 
-          <div className="grid grid-cols-2  p-4 md:grid-cols-3 lg:grid-cols-4 gap-10">
+          <div className="grid grid-cols-2 p-4 md:grid-cols-3 lg:grid-cols-4 gap-10">
             <img src={image3} className="w-40" alt="Partner 5" />
             <img src={image8} className="w-40" alt="Partner 6" />
             <img src={image7} className="w-40" alt="Partner 7" />
@@ -73,7 +73,8 @@ function Partners() {
         <Link
           to="https://www.open-dreams.org/"
           target="_blank"
-          className="bg-blue-600 lg:w-fit rounded-full  items-center justify-center lg:mx-auto flex  mt-6 py-3 px-10 text-white font-medium"
+          className="bg-blue-600 lg:w-fit rounded-full  items-center
+           justify-center lg:mx-auto flex  mt-6 py-3 px-10 text-white font-medium"
         >
           Become a partner
         </Link>

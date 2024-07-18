@@ -1,6 +1,8 @@
 import React from "react";
+import { image14, image15, image16, image17, image18 } from "../assets/Images";
 
 function About() {
+  const myArray = [image14,image15,image16,image17]
   return (
     <div className="lg:flex gap-16">
       <div className="flex-1 flex-col flex gap-16 text-lg text-gray-700  w-full leading-7 lg:w-1/2 font-sans">
@@ -38,9 +40,11 @@ function About() {
        </div>
       </div>
       <div className=" flex flex-col gap-[23px] flex-1 mt-10">
-      {Array.from({length: 4}).map( (_,index) => (
-        <div className="bg-gray-200 h-[207px]" key={index}></div>
-      )) }
+      {myArray.map((image, index) => (
+          <div className="bg-gray-200" key={index}>
+            <img src={image} alt={`Event Image ${index + 1}`} className="h-72 w-full object-cover"  />
+          </div>
+        ))}
       </div>
       </div>
   );
