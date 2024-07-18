@@ -88,7 +88,8 @@ function Schedule() {
             >
               {item}
             </button>
-          ))}
+          )
+          )}
         </div>
          <div>
           <h1>

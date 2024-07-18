@@ -7,8 +7,6 @@ function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
   const { pathname } = useLocation();
   // Adjusted to split by '/' directly
-
-  console.log(isMobile);
   return (
     <nav className="fixed w-full top-0 right-0 left-0 z-50 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 sm:py-5 lg:px-8">
@@ -28,7 +26,7 @@ function Navbar() {
                   to={route.path}
                   className={`rounded p-2 relative ${
                     isActive &&
-                    "before:absolute before:rounded-t font-semibold  before:left-0 before:bg-orange-500 before:bottom-0 before:h-1 before:w-full"
+                    "before:absolute font-semibold  before:left-0 before:bg-orange-500 before:bottom-0 before:h-1 before:w-full"
                   }`}
                 >
                   {route.name}
@@ -46,7 +44,7 @@ function Navbar() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
-                  className="h-6 w-6"
+                  className="h-6 w-6 transition-all duration-300"
                   stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"
@@ -59,13 +57,13 @@ function Navbar() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
-                  className="h-6 w-6"
+                  className="h-6 w-6 transition-all duration-300"
                   stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                  <path d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
               )}
             </button>
@@ -76,7 +74,7 @@ function Navbar() {
       {/* Mobile menu */}
 
       <div
-        className={`lg:hidden fixed h-screen bg-white w-[70%] -top-5 py-20 transition-all duration-300 flex flex-col mt-5 items-center ${
+        className={`lg:hidden fixed h-screen bg-white w-[70%] -top-5 py-20 transition-all duration-300 ease-in flex flex-col mt-5 items-center ${
           isMobile ? "right-0" : "-right-[70%]"
         }`}
       >
