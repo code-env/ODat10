@@ -29,13 +29,13 @@ function Home() {
 
       {/* Second section */}
       <div className="md:mt-10 flex flex-[2] flex-col justify-between items-center">
-        <div className="flex">
+        <div className="">
           <Slider />
           {/* <Contact /> */}
         </div>
         {/* Footer */}
         <footer className="w-full p-4  text-center flex flex-col md:flex-row items-center justify-end">
-          <p className="font-semibold">Follow us on:</p>
+          <p className="font-semibold">Follow us on: </p>
           <div className="flex items-center space-x-4 mt-2 md:mt-0">
             <Link href="#">
               <svg
