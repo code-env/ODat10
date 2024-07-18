@@ -9,7 +9,6 @@
   body {
     background-color: lightgray 50%;
     min-height: 100vh;
-    background-size: cover;
     background-repeat: no-repeat;
   }
 }
@@ -36,10 +35,4 @@
 }
 .hide-scrollbar {
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-}
-.hide-scrollbar::-webkit-scrollbar {
-  /* WebKit */
-  width: 0;
-  height: 0;
 }
