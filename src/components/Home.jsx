@@ -5,12 +5,13 @@ import event1 from "../assets/Rectangle2.png";
 import event2 from "../assets/Rectangle3.png";
 import { Link } from "react-router-dom";
 import Slider from "./Slider";
+import Contact from "./Contact";
 
 function Home() {
   return (
-    <div className="flex flex-col md:flex-row mt-20 ">
+    <div className="flex flex-col md:flex-row">
       {/* First section */}
-      <div className="md:flex-grow-0  md:w-1/2 md:ml-10 m-5 p-5 flex flex-col justify-between">
+      <div className="md:flex-grow-0 md:w-1/2 md:ml-10 flex flex-col justify-between">
         <div className="text-center md:text-left">
           <h2 className="text-4xl md:text-7xl font-bold mb-4">OD@10</h2>
           <p className="text-xl md:text-5xl font-light text-gray-700">
@@ -31,16 +32,16 @@ function Home() {
       <div className="hidden h-screen md:block my-5" />
 
       {/* Second section */}
-      <div className="md:mt-10 flex-[2] flex flex-col justify-center items-center">
-        <div className="flex m-5 p-5">
+      <div className="md:mt-10 flex flex-[2] flex-col justify-between items-center">
+        <div className="flex">
           <Slider />
+          {/* <Contact /> */}
         </div>
-
         {/* Footer */}
-        <footer className="p-4 text-center w-full flex items-center justify-center md:justify-end">
-          <p className="font-semibold mr-2">Follow us on:</p>
-          <div className="flex items-center space-x-4">
-            <Link>
+        <footer className="w-full p-4  text-center flex flex-col md:flex-row items-center justify-end">
+          <p className="font-semibold">Follow us on:</p>
+          <div className="flex items-center space-x-4 mt-2 md:mt-0">
+            <Link href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -48,7 +49,7 @@ function Home() {
                 viewBox="0 0 16 16"
                 fill="none"
               >
-                <g clip-path="url(#clip0_1_132)">
+                <g clipPath="url(#clip0_1_132)">
                   <path
                     d="M16 8.04899C16 3.60299 12.418 -0.00100708 7.99999 -0.00100708C3.57999 -7.08003e-06 -0.00201416 3.60299 -0.00201416 8.04999C-0.00201416 12.067 2.92399 15.397 6.74799 16.001V10.376H4.71799V8.04999H6.74999V6.27499C6.74999 4.25799 7.94499 3.14399 9.77199 3.14399C10.648 3.14399 11.563 3.30099 11.563 3.30099V5.28099H10.554C9.56099 5.28099 9.25099 5.90199 9.25099 6.53899V8.04899H11.469L11.115 10.375H9.24999V16C13.074 15.396 16 12.066 16 8.04899Z"
                     fill="#1D2939"
@@ -61,7 +62,7 @@ function Home() {
                 </defs>
               </svg>
             </Link>
-            <Link>
+            <Link href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -75,7 +76,7 @@ function Home() {
                 />
               </svg>
             </Link>
-            <Link>
+            <Link href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
