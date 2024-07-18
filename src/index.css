@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-             font-family: 'Montserrat',sans-serif;
-    }
-    body{
-        background-color: lightgray 50%;
-        min-height: 100vh;
-ound-size: cover;
-        background-repeat: no-repeat;
-    }
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    background-color: lightgray 50%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+  }
 }
+.flex-none {
   flex: none;
 }
 .transition-transform {
@@ -35,4 +35,4 @@ ound-size: cover;
 }
 .hide-scrollbar {
   scrollbar-width: none; /* Firefox */
-
+}

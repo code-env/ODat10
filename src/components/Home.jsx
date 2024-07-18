@@ -1,11 +1,7 @@
 import React from "react";
 import Countdown from "./Countdown";
-import event from "../assets/Rectangle1.png";
-import event1 from "../assets/Rectangle2.png";
-import event2 from "../assets/Rectangle3.png";
 import { Link } from "react-router-dom";
 import Slider from "./Slider";
-import Contact from "./Contact";
 
 function Home() {
   return (
