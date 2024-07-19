@@ -23,20 +23,19 @@ function Partners() {
     image6,
     image3,
     image8,
-    image7,
-    image12,
+    image7,    image12,
     image9,
     image10,
     image11,
     image13,
   ];
   return (
-    <div className="mt-20">
-      <div className="lg:flex flex-col m-3  font-sans">
-        <div className="">
+    <div className="">
+      <div className="lg:flex flex-col font-sans">
+        <div className="m-3 p-3">
           <h1 className="text-gray-900 text-custom-32">Partners</h1>
         </div>
-        <div className="hidden gap-4  lg:gap-8 lg:grid">
+        <div className="hidden gap-4 lg:gap-8 lg:grid">
           <div className="grid grid-cols-auto-fit-minmax md:grid-cols-4 gap-4">
             <img src={image2} className="w-40" alt="Partner 1" />
             <img src={image4} className="w-40" alt="Partner 2" />
@@ -44,7 +43,7 @@ function Partners() {
             <img src={image6} className="w-40" alt="Partner 4" />
           </div>
 
-          <div className="grid grid-cols-2  p-4 md:grid-cols-3 lg:grid-cols-4 gap-10">
+          <div className="grid grid-cols-2 p-4 md:grid-cols-3 lg:grid-cols-4 gap-10">
             <img src={image3} className="w-40" alt="Partner 5" />
             <img src={image8} className="w-40" alt="Partner 6" />
             <img src={image7} className="w-40" alt="Partner 7" />
@@ -73,7 +72,8 @@ function Partners() {
         <Link
           to="https://www.open-dreams.org/"
           target="_blank"
-          className="bg-blue-600 lg:w-fit rounded-full  items-center justify-center lg:mx-auto flex  mt-6 py-3 px-10 text-white font-medium"
+          className="bg-blue-600 lg:w-fit rounded-full  items-center
+           justify-center lg:mx-auto flex  mt-6 py-3 px-10 text-white font-medium"
         >
           Become a partner
         </Link>
