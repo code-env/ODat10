@@ -32,11 +32,11 @@ function Partners() {
   ];
   return (
     <div className="mt-20">
-      <div className="lg:flex flex-col m-3 p-3 font-sans">
-        <div className="m-3 p-3">
+      <div className="lg:flex flex-col m-3  font-sans">
+        <div className="">
           <h1 className="text-gray-900 text-custom-32">Partners</h1>
         </div>
-        <div className="hidden gap-4 p-6 lg:gap-8 lg:grid">
+        <div className="hidden gap-4  lg:gap-8 lg:grid">
           <div className="grid grid-cols-auto-fit-minmax md:grid-cols-4 gap-4">
             <img src={image2} className="w-40" alt="Partner 1" />
             <img src={image4} className="w-40" alt="Partner 2" />
